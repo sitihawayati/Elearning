@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('courses', function (Blueprint $table) {
+        Schema::create('students', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('courses_id')->nullable();
             $table->string('name');
-            $table->string('category');
-            $table->string('desc');
+            $table->string('nim');
+            $table->string('class');
+            $table->string('major');
             $table->timestamps();
         });
     }

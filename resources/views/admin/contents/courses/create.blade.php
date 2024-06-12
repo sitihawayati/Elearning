@@ -13,21 +13,26 @@
   <section class="section">
     <div class="card">
         <div class="card-body">
-            <form action="/admin/courses/store" method="post">
+            <form action="/admin/courses/store" method="post" class="mt-3">
                 @csrf
                 <div class="mb-2">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" name="name" id="name" category="form-control">
+                    <input type="text" name="name" id="name" class="form-control">
                 </div>
                 
                 <div class="mb-2">
-                    <label for=category class="form-label">Category</label>
-                    <input type="text" name=category id=category category="form-control">
-                </div>
+                  <label for=category class="form-label">Category</label>
+                  <select name="category" id="category" class="form-select">
+                      <option value="">Pilih Category</option>
+                      <option value="Kebugaran Fisik">Kebugaran Fisik</option>
+                      <option value="Kesehatan Mental">Kesehatan Mental</option>
+                      <option value="Kesehatan Lingkungan">Kesehatan Lingkungan</option>
+                  </select>
+              </div>
 
                 <div class="mb-2">
                     <label for=desc class="form-label">Desc</label>
-                    <input type="text" name=desc id=desc category="form-control">
+                    <input type="text" name="desc" id="desc" class="form-control">
                 </div>
 
                 <div class="mb-4">
