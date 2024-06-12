@@ -25,9 +25,9 @@
                   <label for="category" class="form-label">Category</label>
                   <select name="category" id="category" class="form-select">
                       <option value="">Pilih Jurusan</option>
-                      <option value="Teknik Informatika" {{ $student->category == 'Teknik Informatika' ? 'selected' : '' }}>Teknik Informatika</option>
-                      <option value="Sistem Informasi" {{ $student->category == 'Sistem Informasi' ? 'selected' : '' }} >Sistem Informasi</option>
-                      <option value="Bisnis Digital" {{ $student->category == 'Bisnis digital' ? 'selected' : '' }} >Bisnis Digital</option>
+                      <option value="Teknik Informatika" {{ $course->category == 'Teknik Informatika' ? 'selected' : '' }}>Teknik Informatika</option>
+                      <option value="Sistem Informasi" {{ $course->category == 'Sistem Informasi' ? 'selected' : '' }} >Sistem Informasi</option>
+                      <option value="Bisnis Digital" {{ $course->category == 'Bisnis digital' ? 'selected' : '' }} >Bisnis Digital</option>
                   </select>
 
               </div>
